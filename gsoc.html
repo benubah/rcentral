@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>R-Google Summer of Code Projects</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/custom.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.csv.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src="js/csv_to_html_table.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <style>  
+    
+    tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+   
+   
+    body {
+  font:  "Helvetica Neue", HelveticaNeue, Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+      background-color: #fff;
+}
+    </style>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">R-GSoC</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                     
+
+                    <li><a href="#"></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+
+    <div class="container" >
+	<div class="row"> 
+	<br/><br/><br/>
+      <h1>- R-Google Summer of Code Projects</h1>
+       </div>
+       
+        <!-- page content -->
+        <div class="right_col " role="main">
+<!-- top tiles -->
+          <div class="row tile_count">
+
+
+            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i>  Projects</span>
+              <div class="count red">185</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>by 2018 </i> </span>
+            </div>
+            
+            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Years Participated </span>
+              <div class="count green">11</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-desc"></i>  by 2018</i></span>
+            </div>
+</div>
+<hr/>
+       
+      <div id="table-container" style="margin-right:20px;margin-left:20px;">
+    
+    <!-- /.container -->
+    <script type="text/javascript">
+      
+        //my custom function that creates a hyperlink
+  function format_link(link){
+    if (link)
+      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+    else
+      return "";
+  }
+      
+      init_table({
+        csv_path: 'data/gsoc172.csv', 
+        element: 'table-container', 
+        allow_download: true,
+        csv_options: {separator: '\t', delimiter: '"'},
+        datatables_options: {"paging": true, "order": [[0, "desc"]], "autoWidth": false},
+        custom_formatting: [[6, format_link]] //execute the function on the 6th column of every row
+      });
+    </script>
+</div>
+
+<hr/>
+ <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Visualization</h2>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rgsoc_chart" style="height:550px;"></div>
+
+                  </div>
+                </div>
+              </div>
+              <p>Data source: https://github.com/rstats-gsoc/gsoc2017/blob/master/projects.csv</p>
+    </div>          
+</div>
+<script src="js/echarts/echarts.min.js"></script>
+ <!-- Custom Theme Scripts -->
+    <script src="js/echarts/custom.min.js"></script>
+<script src="js/echarts/customdata.js"></script>
+  </body>
+</html>
