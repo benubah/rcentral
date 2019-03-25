@@ -10,7 +10,7 @@ d3.csv("data/groups.csv").then(function(data) {
   console.log(cleandata);
    
    var numberproj = d3.nest()
-  .key(function(d) { return d.page  })
+  .key(function(d) { return d.GroupName  })
   .rollup(function(v) { return v.length;  })
   .entries(cleandata);
    dat3 = JSON.stringify(numberproj).replace(/key/g, "name");
@@ -44,7 +44,7 @@ var n = echarts.init(document.getElementById('echart_world_map2'));
 
    
    var numberproj = d3.nest()
-  .key(function(d) { return d.country  })
+  .key(function(d) { return d.Country  })
   .rollup(function(v) { return v.length;  })
   .entries(cleandata);
 var dat2 = JSON.stringify(numberproj).replace(/key/g, 'name');
