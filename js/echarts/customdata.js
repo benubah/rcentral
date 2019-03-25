@@ -1,1 +1,32 @@
-if($("#rcon_chart").length){var f=echarts.init(document.getElementById("rcon_chart"),a);f.setOption({title:{text:"Line Graph",subtext:"Yearly/Quarterly Spending"},tooltip:{trigger:"axis"},legend:{x:220,y:40,data:["Intent","Pre-order","Deal"]},toolbox:{show:!0,feature:{magicType:{show:!0,title:{line:"Line",bar:"Bar",stack:"Stack",tiled:"Tiled"},type:["line","bar","stack","tiled"]},restore:{show:!0,title:"Restore"},saveAsImage:{show:!0,title:"Save Image"}}},calculable:!0,xAxis:[{type:"category",boundaryGap:!1,data:["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]}],yAxis:[{type:"value"}],series:[{name:"Deal",type:"line",smooth:!0,itemStyle:{normal:{areaStyle:{type:"default"}}},data:[10,12,21,54,260,830,710]},{name:"Pre-order",type:"line",smooth:!0,itemStyle:{normal:{areaStyle:{type:"default"}}},data:[30,182,434,791,390,30,10]},{name:"Intent",type:"line",smooth:!0,itemStyle:{normal:{areaStyle:{type:"default"}}},data:[1320,1132,601,234,120,90,20]}]})}
+
+d3.csv("data/groups.csv").then(function(data) {
+   var cleandata = data.map(function(d) {
+    var cleanD = {};
+    d3.keys(d).forEach(function(k) {
+      cleanD[_.trim(k)] = _.trim(d[k]);
+    });
+    return cleanD;
+  });
+  console.log(cleandata);
+   
+   var numberproj = d3.nest()
+  .key(function(d) { return d.page  })
+  .rollup(function(v) { return v.length;  })
+  .entries(cleandata);
+   dat3 = JSON.stringify(numberproj).replace(/key/g, "name");
+  var parsedData = JSON.parse(dat3);
+   var continents = [];
+   var counts = [];
+   for(let i = 0, l = parsedData.length; i < l; i++) {
+      continents.push(parsedData[i].name)
+     counts.push(parsedData[i].value)
+   }
+console.log(continents);
+   console.log(counts);
+
+var f=echarts.init(document.getElementById("rugs_chart"),a);
+f.setOption({title:{text:"R User Groups",subtext:"Number of Groups by Continent"},tooltip:{trigger:"axis"},legend:{data:["Number of Groups"]},toolbox:{show:!0,feature:{magicType:{show:!0,title:{line:"Line",bar:"Bar"},type:["line","bar"]},restore:{show:!0,title:"Restore"},saveAsImage:{show:!0,title:"Save Image"}}},calculable:!0,xAxis:[{type:"category",data: continents}],yAxis:[{type:"value"}],series:[{name:"Number of Groups",type:"bar",data:counts }]})
+
+});
+
+
