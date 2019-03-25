@@ -30,7 +30,7 @@ f.setOption({title:{text:"R User Groups",subtext:"Number of Groups by Continent"
 });
 
 
-d3.csv("https://jumpingrivers.github.io/meetingsR/groups.csv").then(function(data) {
+d3.csv("data/groups.csv").then(function(data) {
  var cleandata = data.map(function(d) {
     var cleanD = {};
     d3.keys(d).forEach(function(k) {
