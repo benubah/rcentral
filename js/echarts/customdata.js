@@ -24,7 +24,7 @@ d3.csv("data/groups.csv").then(function(data) {
 console.log(continents);
    console.log(counts);
 
-var f=echarts.init(document.getElementById("rugs_chart"),a);
+var f=echarts.init(document.getElementById("rugs_chart"));
 f.setOption({title:{text:"R User Groups",subtext:"Number of Groups by Continent"},tooltip:{trigger:"axis"},legend:{data:["Number of Groups"]},toolbox:{show:!0,feature:{magicType:{show:!0,title:{line:"Line",bar:"Bar"},type:["line","bar"]},restore:{show:!0,title:"Restore"},saveAsImage:{show:!0,title:"Save Image"}}},calculable:!0,xAxis:[{type:"category",data: continents}],yAxis:[{type:"value"}],series:[{name:"Number of Groups",type:"bar",data:counts }]})
 
 });
