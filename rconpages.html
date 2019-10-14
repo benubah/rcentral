@@ -29,6 +29,9 @@
   color: #333;
       background-color: #fff;
 }
+
+
+
 .hero-bkg-animated {
   background: white url(images/rcon.png) repeat 0 0;
   width: 100%;
@@ -48,6 +51,7 @@
     from { background-position: 0 0; }
     to { background-position: -400px 0; }
 }
+
 
     </style>
   </head>
@@ -85,7 +89,14 @@
  <div class="right_col" role="main">
           <div class="">
             <div class="row top_tiles">
-              
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
+                  <div class="count">--</div>
+                  <h3>--</h3>
+                  <p>---</p>
+                </div>
+              </div>
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-comments-o"></i></div>
@@ -102,19 +113,11 @@
                   <p>All year</p>
                 </div>
               </div>
-		    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div class="tile-stats">
-                  <div class="icon"><i class="fa fa-caret-square-o-right"></i></div>
-                  <div class="count">5</div>
-                  <h3>Completed Projects</h3>
-                  <p>---</p>
-                </div>
-              </div>
               <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="tile-stats">
                   <div class="icon"><i class="fa fa-check-square-o"></i></div>
-                  <div class="count">9</div>
-                  <h3>Ongoing Projects</h3>
+                  <div class="count">--</div>
+                  <h3>--</h3>
                   <p>---</p>
                 </div>
               </div>
@@ -444,8 +447,9 @@ Where/How to get involved or provide feedback: <br/>
 
  </div>
 
-
-<script src="js/echarts/echarts.min.js"></script>
+<script src="js/d3/d3.min.js"></script>
+<script src="js/lodash-4.17.10/package/lodash.min.js"></script>
+<script src="js/echarts/echarts.js"></script>
  <!-- Custom Theme Scripts -->
     <script src="js/echarts/custom.min.js"></script>
 <script src="js/echarts/customdata.js"></script>
