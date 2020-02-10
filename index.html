@@ -2,10 +2,9 @@
 <html>
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <title>R-Google Summer of Code Projects</title>
+    <title>R Language Trends and Actvities</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="css/custom.min.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.csv.min.js"></script>
@@ -45,17 +44,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">R-GSoC</a>
+                <a class="navbar-brand" href="http://r-central.com">r-central.com</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                     
-
-                    <li><a href="#"></a>
+                    <li><a href="../rstats">RStats</a>
                     </li>
-                    
+<li><a href="../ranking">Ranking</a>
+                    </li>
+			    <li><a href="../rconsortium">RConsortium</a>
+                    </li>
+
+                    <li><a href="../gsoc">R-GSoC</a>
+                    </li>
+                    <li><a href="../rugs">R User Groups</a>
+                    </li>
+                    <li><a href="../rladies">RLadies</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -68,71 +75,189 @@
 
     <div class="container" >
 	<div class="row"> 
-	<br/><br/><br/>
-      <h1>- R-Google Summer of Code Projects</h1>
+	<br/><br/>
+      <h1> Visualizations Tracking Activity around R</h1><hr/>
        </div>
-       
-        <!-- page content -->
-        <div class="right_col " role="main">
-<!-- top tiles -->
-          <div class="row tile_count">
-
-
-            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i>  Projects</span>
-              <div class="count red">185</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>by 2018 </i> </span>
-            </div>
-            
-            <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Years Participated </span>
-              <div class="count green">11</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-desc"></i>  by 2018</i></span>
-            </div>
-</div>
-<hr/>
-       
-      <div id="table-container" style="margin-right:20px;margin-left:20px;">
-    
+      
+    </div>
     <!-- /.container -->
-    <script type="text/javascript">
-      
-        //my custom function that creates a hyperlink
-  function format_link(link){
-    if (link)
-      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-    else
-      return "";
-  }
-      
-      init_table({
-        csv_path: 'data/gsoc172.csv', 
-        element: 'table-container', 
-        allow_download: true,
-        csv_options: {separator: '\t', delimiter: '"'},
-        datatables_options: {"paging": true, "order": [[0, "desc"]], "autoWidth": false},
-        custom_formatting: [[6, format_link]] //execute the function on the 6th column of every row
-      });
-    </script>
-</div>
+    
 
-<hr/>
- <div class="col-md-12 col-sm-12 col-xs-12">
+	
+
+ <div class="container" >
+
+<div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Visualization</h2>
+                    <h2>R Downloads</h2><hr/>
                                         <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
 
-                    <div id="rgsoc_chart" style="height:550px;"></div>
+                    <div id="rdtchart" style="height:380px;"></div>
 
                   </div>
                 </div>
               </div>
-              <p>Data source: https://github.com/rstats-gsoc/gsoc2017/blob/master/projects.csv</p>
-    </div>          
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <hr/>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rd_chart" style="height:380px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <hr/>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rdversion" style="height:380px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+ <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>R Packages</h2><hr/>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_package_chart" style="height:380px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_quarterly_package_chart" style="height:380px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>StackOverflow</h2><hr/>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_so_tag_chart" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_so_count_chart" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_so_views_chart" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="st_chart" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>RBloggers</h2><hr/>
+                                        <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div id="rstat_rbloggers_chart" style="height:400px;"></div>
+
+                  </div>
+                </div>
+              </div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+<h2>Google Trends: 2008-2017</h2>
+<h6><u>Interest over time:</u> Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means that there was not enough data for this term.</h6>
+<hr/>
+  <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script>
+  <script type="text/javascript">
+    trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/0212jm","geo":"","time":"2008-01-01 2017-12-31"}],"category":0,"property":""}, {"exploreQuery":"date=2008-01-01%202017-12-31&q=%2Fm%2F0212jm","guestPath":"https://trends.google.com:443/trends/embed/"});
+  </script>
 </div>
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+<h2>Google Trends Map: 2008-2017</h2>
+<h6><u>Interest by Region:</u> See in which location your term was most popular during the specified time frame. Values are calculated on a scale from 0 to 100, where 100 is the location with the most popularity as a fraction of total searches in that location, a value of 50 indicates a location which is half as popular. A value of 0 indicates a location where there was not enough data for this term.
+<br>
+<u>Note:</u> A higher value means a higher proportion of all queries, not a higher absolute query count. So a tiny country where 80% of the queries are for 'bananas' will get twice the score of a giant country where only 40% of the queries are for 'bananas'.</h6>
+<hr/>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1480_RC02/embed_loader.js"></script>
+  <script type="text/javascript">
+    trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"/m/0212jm","geo":"","time":"2008-01-01 2017-12-31"}],"category":0,"property":""}, {"exploreQuery":"date=2008-01-01%202017-12-31&q=%2Fm%2F0212jm","guestPath":"https://trends.google.com:443/trends/embed/"});
+  </script>
+
+</div>
+
+
+
+
+ </div>
+
 <script src="js/echarts/echarts.min.js"></script>
  <!-- Custom Theme Scripts -->
     <script src="js/echarts/custom.min.js"></script>
