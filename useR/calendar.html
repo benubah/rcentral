@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<title>UseR! 2020 Calendar</title>
+
+<link href="main.min.css" rel="stylesheet">
+<link href="cal.css" rel="stylesheet">
+
+</head>
+<body>
+<div id='top'>
+
+  <div style='float:left'>
+    Timezone:
+    <select id='time-zone-selector'>
+      <option value='local' selected>Local Time</option>
+      <option value='UTC'>UTC</option>
+    </select>
+  </div>
+
+  <div style='float:right'>
+<img src="user-logo.png" width="120px" height="55px">
+    <span id='loading'>loading...</span>
+
+  </div>
+
+  <div style='clear:both'></div>
+</div>
+
+<div id='calendar' style='width:100%'></div>
+
+
+<script src="main.min.js"></script>
+<script src="cal.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
+</body>
+</html>
