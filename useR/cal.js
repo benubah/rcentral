@@ -1,5 +1,5 @@
 ﻿document.addEventListener('DOMContentLoaded', function() {
-  var initialTimeZone = 'local';
+  var initialTimeZone = 'UTC';
   var timeZoneSelectorEl = document.getElementById('time-zone-selector');
   var loadingEl = document.getElementById('loading');
   var calendarEl = document.getElementById('calendar');
