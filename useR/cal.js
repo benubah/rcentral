@@ -1,17 +1,19 @@
-﻿document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   var initialTimeZone = 'local';
   var timeZoneSelectorEl = document.getElementById('time-zone-selector');
   var loadingEl = document.getElementById('loading');
   var calendarEl = document.getElementById('calendar');
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialDate: '2020-07-01',
-    timeZone: initialTimeZone,
+    
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'listWeek,dayGridMonth,timeGridWeek,timeGridDay'
+      right: 'timeGridWeek,listWeek,dayGridMonth,timeGridDay'
     },
+initialDate: '2021-07-04',
+    timeZone: initialTimeZone,
+    initialView: 'timeGridWeek',
     navLinks: true, // can click day/week names to navigate views
     editable: true,
     selectable: true,
@@ -28,9 +30,7 @@
     },
 
 
-
-   // events:  'https://fullcalendar.io/demo-events.json?start=2020-06-01&end=2020-06-30',
-       events: 'events.json',
+       events: 'user2021.json',
     loading: function(bool) {
       if (bool) {
         loadingEl.style.display = 'inline'; // show
@@ -46,7 +46,7 @@
 
   // load the list of available timezones, build the <select> options
   // it's highly encouraged to use your own AJAX lib instead of using FullCalendar's internal util
-  FullCalendar.requestJson('GET', 'demo-timezones.json', {}, function(timeZones) {
+  FullCalendar.requestJson('GET', 'timezones.json', {}, function(timeZones) {
     timeZones.forEach(function(timeZone) {
       var optionEl;
 
