@@ -1,0 +1,417 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>useR! 2021 | Tutorial Submission </title>
+{{ headContent() }}
+ <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="css/custom.min.css" rel="stylesheet">
+<link href="css/materialize.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<style>
+  
+  body {
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
+}
+
+body,
+input,
+select,
+textarea,
+body * {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+.form-container {
+  position: relative;
+  max-width: 50rem;
+  margin: 2rem auto;
+  background: #fff;
+  width: 100%;
+  padding: 3rem 5rem 0;
+  border-radius: 10px;
+  border:1px solid #4f93ce;
+}
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: -webkit-transform 0.28s ease-in-out;
+  transition: -webkit-transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out;
+  transition: transform 0.28s ease-in-out, -webkit-transform 0.28s ease-in-out;
+  z-index: -1;
+}
+.form-container:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.button-container {
+  text-align: center;
+}
+
+
+.nav-md .container.body .col-md-3.left_col.menu_fixed{height:100%;margin-left:-200px;position:fixed}
+
+/* label color */
+   .input-field label {
+     font-size: 1.3rem;
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+
+sub {
+  font-size: 65%;
+   position: relative;
+}
+
+fieldset {
+  margin: 0 0 3rem;
+  padding: 0;
+  border: none;
+}
+
+   input:focus {
+  border-bottom: 2px solid royalblue !important;
+  box-shadow: 0 2px 0 0 royalblue !important;
+}
+
+input {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+}
+textarea {
+  border-bottom: 1px solid black !important;
+  box-shadow: 0 1px 0 0 black !important;
+  height: 5rem !important;
+  padding-top: 0px; 
+}
+textarea:focus {
+  border-bottom: 2px solid royalblue !important;
+  box-shadow: 0 2px 0 0 royalblue !important;
+  height: 2rem;
+}
+select:focus {
+  border-bottom: 2px solid royalblue !important;
+  box-shadow: 0 2px 0 0 royalblue !important;
+}
+label.active {
+  color: royalblue !important;
+  font-size: 1.5rem;
+}
+
+label {
+  color: black !important;
+  font-size: 1.3rem;
+}
+
+select {
+  margin-left: 0.6rem;
+}
+
+.row label{
+  margin-left: 0.6rem;
+}
+.helper-text { 
+  font-size: 1rem !important;
+}
+  
+</style>
+
+</head>
+
+<body class="nav-md">
+  <div class="body container" >
+     <div class="main_container" >
+    <div class="col-md-3 left_col menu_fixed" style="background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+   color:black; height:100%">
+          <div class="left_col scroll-view" style="background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+   font-size:15px; color:black">
+           
+		 <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/marmot.png" width = "180px" alt="marmot picture" class="">
+              </div>
+              <div class="profile_info">
+                <span>.</span>
+                <h2></h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <div class="clearfix"></div>
+
+            
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu" >
+              <div class="menu_section active">
+               
+                <ul class="nav side-menu">
+                  <li><a><span style="color:black; font-weight:bold"><i class="fa fa-home" ></i> Home</span> </a>                  </li>
+
+
+<li><a href="#"><span style="color:black; font-weight:bold"><i class="fa fa-book"></i> <span style="color:black; font-weight:bold">Abstract Submission</span> </a>
+                                      </li>
+<li><a href="#" target="_blank"><span style="color:black; font-weight:bold"><i class="fa fa-building"></i> Tutorial Submission </span></a>
+                                      </li>
+                                           
+                                  </ul>
+              </div>
+              
+
+            </div>
+            <!-- /sidebar menu -->
+
+          </div>
+        </div>
+        
+        
+<div class="form-container">        
+    <h1>use-R! 2021 Tutorial Submission </h1>
+         
+</div>
+<div class="form-container">
+  
+  <div class="row">
+     <h1> Tutorial Information </h1>
+    <form id="tutform" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="title" type="text" class="validate">
+          <label for="title">Tutorial Title</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <textarea id="description" class="materialize-textarea" data-length="500" aria-labelledby="description-label description-helper"></textarea>
+            <label for="description" id="description-label">Description<sub>.</sub> </label>
+            <span id="description-helper" class="helper-text">Provide a paragraph with topics to be covered also mention a brief detail of resources to deliver the tutorial online using active teaching (e.g., break out rooms?, pair programming? shared repo?) - 500 words</span>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="outline" class="materialize-textarea" data-length="500" aria-labelledby="outline-label outline-helper"></textarea>
+            <label for="outline" id="outline-label">Outline <sub>.</sub></label>
+            <span id="outline-helper" class="helper-text">Provide a tutorial outline with the approximate duration of each section, example: lecture 20 minutes, live coding 15 minutes, lab 20 minutes.</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="objectives" class="materialize-textarea" data-length="500" aria-labelledby="objectives-label objectives-helper"></textarea>
+            <label for="objectives" id="objectives-label">Learning Goals and Objectives <sub>.</sub></label>
+            <span id="objectives-helper" class="helper-text">Provide a paragraph or list of learning goals and objectives - 500 words</span>
+          </div>
+        </div>
+         <div class="row">
+        <div class="input-field col s12">
+          <input id="duration" type="number" class="validate">
+          <label for="duration">Duration (in minutes)</label>
+          <span class="helper-text" data-error="Please provide a number" data-success="Good!"></span>
+        </div>
+      </div>
+      <div class="row">
+        
+              <label > Preferred time zone</label>
+    <select id="timezone1" class="browser-default">
+      <option value="" disabled selected>Select Preferred time zone</option>
+      <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+      <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+      <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+    </select>
+
+      </div>
+      <div class="row">
+        
+          <label> Preferred time zone 2</label>
+    <select id="timezone2" class="browser-default">
+            <option value="" disabled selected>Select Preferred time zone 2</option>
+      <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+      <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+      <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+      <option value="None">None</option>
+    </select>
+    
+      </div>
+      <div class="row">
+        
+              <label> Preferred time zone 3</label>
+
+    <select id="timezone3" class="browser-default">
+            <option value="" disabled selected>Select Preferred time zone 3</option>
+      <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+      <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+      <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+      <option value="None">None</option>
+    </select>
+
+      </div>
+      <div class="row">
+   <label>Language 1</label>
+    <select id="language1" class="browser-default">
+      <option value="" disabled selected>Select Language</option>
+      <option value="English">English</option>
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+    </select>
+      </div>
+      <div class="row">
+        <label>Language 2</label>
+    <select id="language2" class="browser-default">
+      <option value="" disabled selected>Select Language 2</option>
+      <option value="English">English</option>
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+    </select>
+      </div>
+      <div class="row">
+        <label>Language 3</label>
+    <select id="language3" class="browser-default">
+      <option value="" disabled selected>Select Language 3</option>
+      <option value="English">English</option>
+      <option value="Spanish">Spanish</option>
+      <option value="French">French</option>
+    </select>
+    
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="language_more" type="text" class="validate" aria-labelledby="language-label language-helper">
+          <label for="language_more" id="language-label">Other Possible Languages<sub>.</sub></label>
+          <span id="language-helper" class="helper-text">Enter NA if not applicable</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="keywords" type="text" class="validate">
+          <label for="keywords">Keywords separated by commas. (Minimum of 5 Keywords)</label>
+          <span class="helper-text"></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="n_attendees" type="number" class="validate">
+          <label for="n_attendees">Maximum Attendees</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="website" type="text" class="validate">
+          <label for="website">Link to Course Material</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <textarea id="motivation" class="materialize-textarea" data-length="500" aria-labelledby="motivation-label motivation-helper"></textarea>
+            <label for="motivation" id="motivation-label">Motivation.</label>
+            <span id="motivation-helper" class="helper-text">Why do you think this would be a good tutorial for participants of use-R! 2021 - 500 words</span>
+          </div>
+        </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="tutorial_equipment" class="materialize-textarea" data-length="500"></textarea>
+          <label for="tutorial_equipment">What equipment do you need?</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <textarea id="tutorial_software" class="materialize-textarea" data-length="500"></textarea>
+          <label for="tutorial_software">What software do you need?</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <textarea id="tutorial_helpers" class="materialize-textarea" data-length="500"></textarea>
+          <label for="tutorial_helpers">What kind of helpers do you need?</label>
+        </div>
+        </div>
+        
+    <div class="button-container">  
+    
+    <button id="btn" class="btn waves-effect waves-light btn-large blue shiny-bound-input action-button" aria-label="Save Response">Save Response
+    <i class="material-icons right">cloud_upload</i>
+  </button>
+    
+ 
+  </div>      
+    </form>
+    
+    <div class="row">
+      {{ subDetails }}
+    </div>
+    
+    <br><br>
+    
+    
+     <div class="row">
+      {{ tutorialDetails }}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div></div>
+<script src="js/jquery.min.js"></script>
+ <script src="js/materialize.min.js"></script>
+ <script>
+   $(document).ready(function() {
+    $('textarea#description, textarea#outline, textarea#objectives').characterCounter();
+     $('select').formSelect();
+  });
+ </script>
+</body>
+</html>

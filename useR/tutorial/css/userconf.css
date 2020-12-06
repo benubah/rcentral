@@ -1,0 +1,160 @@
+body {
+    background-color: #f2f2f2;
+  }
+  
+  body,
+  input,
+  select,
+  textarea,
+  body * {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-container {
+    position: relative;
+    max-width: 55rem;
+    margin: 2rem auto;
+    background: #fff;
+    width: 100%;
+    color: black;
+    padding: 3rem 5rem 0;
+    border-radius: 10px;
+     box-shadow: 0 6px 8px 1px rgba(0, 0, 0, 0.14), 0 2px 12px 2px rgba(0, 0, 0, 0.12), 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+  /*  border:1px solid #4f93ce;*/
+  }
+  .form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 10px 12px 2px rgba(0, 0, 0, 0.16), 0 4px 16px 3px rgba(0, 0, 0, 0.14), 0 6px 6px -4px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-transition: -webkit-transform 0.28s ease-in-out;
+    transition: -webkit-transform 0.28s ease-in-out;
+    transition: transform 0.28s ease-in-out;
+    transition: transform 0.28s ease-in-out, -webkit-transform 0.28s ease-in-out;
+    z-index: -1;
+  }
+  .form-container:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  
+  /* label color */
+     .input-field label {
+       font-size: 1.3rem;
+       color: #000;
+     }
+     /* label focus color */
+     .input-field input[type=text]:focus + label {
+       color: #000;
+     }
+     /* label underline focus color */
+     .input-field input[type=text]:focus {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+     /* valid color */
+     .input-field input[type=text].valid {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+     /* invalid color */
+     .input-field input[type=text].invalid {
+       border-bottom: 1px solid #000;
+       box-shadow: 0 1px 0 0 #000;
+     }
+     /* icon prefix focus color */
+     .input-field .prefix.active {
+       color: #000;
+     }
+ 
+ 
+ 
+ 
+    .input-field input[type].invalid,
+    .input-field input[type].invalid:focus,
+    .input-field textarea.invalid,
+    .input-field textarea.invalid:focus {
+      border-bottom: 1px solid red !important;
+      box-shadow: 0 1px 0 0 red !important;
+    }
+    
+    .input-field input[type].invalid:focus+label,
+    .input-field input[type].invalid~.helper-text::after,
+    .input-field input[type].invalid:focus~.helper-text::after, 
+    .input-field textarea.invalid:focus+label,
+    .input-field textarea.invalid~.helper-text::after,
+    .input-field textarea.invalid:focus~.helper-text::after {
+      color: red !important;
+    }
+
+  sub {
+    font-size: 65%;
+     position: relative;
+  }
+  
+  fieldset {
+    margin: 0 0 3rem;
+    padding: 0;
+    border: none;
+  }
+  
+     input:focus {
+    border-bottom: 2px solid royalblue !important;
+    box-shadow: 0 2px 0 0 royalblue !important;
+  }
+  
+  input {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+  }
+  textarea {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+    padding-top: 0px; 
+  }
+  textarea:focus {
+    border-bottom: 2px solid royalblue !important;
+    box-shadow: 0 2px 0 0 royalblue !important;
+  }
+  select:focus {
+    border-bottom: 2px solid royalblue !important;
+    box-shadow: 0 2px 0 0 royalblue !important;
+  }
+  label.active {
+    color: royalblue !important;
+    font-size: 1.5rem;
+  }
+  
+  label {
+    color: black !important;
+    font-size: 1.3rem;
+  }
+  
+  select {
+    margin-left: 0.6rem;
+  }
+  
+  .row label{
+    margin-left: 0.6rem;
+  }
+  .helper-text { 
+    font-size: 1rem !important;
+  }
+    
