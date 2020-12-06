@@ -1,0 +1,404 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>useR! 2021 | Tutorial Submission </title>
+     {{ headContent() }} 
+    <!-- Font Awesome -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/86ad1ecbc0.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link href="css/user-hugo-animate.css" rel="stylesheet">
+ <link href="css/user-hugo-default.css" rel="stylesheet" id="theme-stylesheet">
+  <link href="css/user-hugo-custom.css" rel="stylesheet">
+<link href="css/materialize.min.css" rel="stylesheet">
+<link href="css/userconf.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  
+  
+    <div class="body container">
+              <div class="main_container">
+            <h1>useR! 2021 Tutorial Submission </h1>
+            <!-- Main Form START  -->
+            <form>
+                <!-- Tutorial Information -->
+                <div class="form-container">
+                    <h3>Tutorial Information</h3>
+                    <br>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="submission_token" type="text" class="validate" aria-labelledby="token-label token-helper">
+                            <label for="submission_token" id="token-label">Submission Token<sub>.</sub></label>
+                            <span id="token-helper" class="helper-text">
+                                Leave this field blank if you about to submit a NEW submission.
+                                Only use this field to enter your SUBMISSION TOKEN if you want to 
+                                update an existing submission.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="title" type="text" class="validate">
+                            <label for="title">Tutorial Title</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="description" class="materialize-textarea" data-length="500"
+                                aria-labelledby="description-label description-helper"></textarea>
+                            <label for="description" id="description-label">Description<sub>.</sub> </label>
+                            <span id="description-helper" class="helper-text">Provide a paragraph with topics to be
+                                covered
+                                also
+                                mention a brief detail of resources to deliver the tutorial online using active teaching
+                                (e.g.,
+                                break out rooms?, pair programming? shared repo?) - 500 words</span>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="outline" class="materialize-textarea" data-length="500"
+                                aria-labelledby="outline-label outline-helper"></textarea>
+                            <label for="outline" id="outline-label">Outline <sub>.</sub></label>
+                            <span id="outline-helper" class="helper-text">Provide a tutorial outline with the
+                                approximate
+                                duration of each section, example: lecture 20 minutes, live coding 15 minutes, lab 20
+                                minutes.</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="objectives" class="materialize-textarea" data-length="500"
+                                aria-labelledby="objectives-label objectives-helper"></textarea>
+                            <label for="objectives" id="objectives-label">Learning Goals and Objectives
+                                <sub>.</sub></label>
+                            <span id="objectives-helper" class="helper-text">Provide a paragraph or list of learning
+                                goals
+                                and
+                                objectives - 500 words</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="duration" type="number" class="validate">
+                            <label for="duration">Duration (in minutes)</label>
+                            <span class="helper-text" data-error="Please provide a number" data-success="Good!"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label> Preferred Time Zone</label>
+                        <select id="timezone1" class="browser-default">
+                            <option value="" disabled selected>Select Preferred Time Zone</option>
+                            <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+                            <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+                            <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label> Second Best Time Zone</label>
+                        <select id="timezone2" class="browser-default">
+                            <option value="" disabled selected>Select Second Best Time Zone</option>
+                            <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+                            <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+                            <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+                            <option value="None">None</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label> Third Best Time Zone</label>
+                        <select id="timezone3" class="browser-default">
+                            <option value="" disabled selected>Select Third Best Time Zone</option>
+                            <option value="Americas (UTC -7)">Americas (UTC -7)</option>
+                            <option value="Africa & Europe (UTC +2)">Africa & Europe (UTC +2)</option>
+                            <option value="Oceania & Asia (UTC +8)">Oceania & Asia (UTC +8)</option>
+                            <option value="None">None</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>Language 1</label>
+                        <select id="language1" class="browser-default">
+                            <option value="" disabled selected>Select Language</option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>Language 2</label>
+                        <select id="language2" class="browser-default">
+                            <option value="" disabled selected>Select Language 2</option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>Language 3</label>
+                        <select id="language3" class="browser-default">
+                            <option value="" disabled selected>Select Language 3</option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="language_more" type="text" class="validate"
+                                aria-labelledby="language-label language-helper">
+                            <label for="language_more" id="language-label">Other Possible Languages<sub>.</sub></label>
+                            <span id="language-helper" class="helper-text">Enter NA if not applicable</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="keywords" type="text" class="validate">
+                            <label for="keywords">Keywords separated by commas. (Minimum of 5 Keywords)</label>
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="n_attendees" type="number" class="validate">
+                            <label for="n_attendees">Maximum Attendees</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="website" type="text" class="validate">
+                            <label for="website">Link to Course Material</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="motivation" class="materialize-textarea" data-length="500"
+                                aria-labelledby="motivation-label motivation-helper"></textarea>
+                            <label for="motivation" id="motivation-label">Motivation.</label>
+                            <span id="motivation-helper" class="helper-text">
+                                Why is tutorial
+                                suitable for
+                                participants of useR! 2021 ? - 500 words</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="tutorial_equipment" class="materialize-textarea" data-length="500"></textarea>
+                            <label for="tutorial_equipment">What equipment do you need?</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="tutorial_software" class="materialize-textarea" data-length="500"></textarea>
+                            <label for="tutorial_software">What software do you need?</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="tutorial_helpers" class="materialize-textarea" data-length="500"></textarea>
+                            <label for="tutorial_helpers">What kind of helpers do you need?</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Information -->
+                <div class="form-container">
+                    <h3> Instructor Information</h3>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="instructor_name" type="text" class="validate">
+                            <label for="instructor_name">Name of the corresponding instructor</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="Please provide a valid email"
+                                data-success="Good!"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">location_city</i>
+                            <input id="affiliation" type="text" class="validate" aria-label="Affiliation of Instructor">
+                            <label for="affiliation">Affiliation</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p>
+                                <label>Instructor Language</label>
+                            </p>
+                            <label>
+                                <input id="instructor_language1" type="checkbox" value="English"
+                                    aria-label="Languages of Instructor. English" />
+                                <span>English</span>
+                            </label>
+                            <label>
+                                <input id="instructor_language2" type="checkbox" value="Spanish" />
+                                <span>Spanish</span>
+                            </label>
+                            <label>
+                                <input id="instructor_language3" type="checkbox" value="French" />
+                                <span>French</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="other_instructors" class="materialize-textarea" data-length="500"
+                                aria-labelledby="instructors-label instructors-helper"></textarea>
+                            <label for="other_instructors" id="instructors-label">Other Instructors <sub>.</sub></label>
+                            <span id="instructors-helper" class="helper-text">Provide information for other instructors
+                                in the following format: Name of Instructor, Affiliation of Instructor, Role of
+                                Instructor (that is, Instructor or Assistant), and Languages of Instruction (e.g.
+                                English, Spanish, French)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3>Audience</h3>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">groups</i>
+                            <textarea id="audience" class="materialize-textarea"></textarea> <label
+                                for="audience">Target Audience</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>Level of Participants' Knowledge of R</label>
+                        <select id="knowledge_level" class="browser-default">
+                            <option value="" disabled selected>Level of Participants' Knowledge of R</option>
+                            <option value="Beginner" aria-label="Beginner">Beginner</option>
+                            <option value="Intermediate" aria-label="Intermediate">Intermediate</option>
+                            <option value="Advanced" aria-label="Advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">description</i>
+                            <input id="background" type="text" class="validate">
+                            <label for="background">Other Required Background Knowledge</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">home_repair_service</i>
+                            <input id="equipment" type="text" class="validate">
+                            <label for="equipment">Required Equipment</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">apps</i>
+                            <input id="software" type="text" class="validate">
+                            <label for="software">Required Software</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">pending_actions</i>
+                            <input id="indications" type="text" class="validate">
+                            <label for="indications">Other Indications</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-container">
+                    <h3>Accessibility</h3>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">source</i>
+                            <input id="license" type="text" class="validate">
+                            <label for="license">Tutorial/Material License</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>
+                                <input id="agree_to_be_recorded" type="checkbox" value="yes" />
+                                <span>I agree to be recorded.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>
+                                <input id="agree_to_livestream" type="checkbox" value="yes" />
+                                <span>I agree to livestream my tutorial.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>
+                                <input id="agree_to_share_tutorial" type="checkbox" value="yes" />
+                                <span>I agree to share my tutorial in the conference's GitHub repository.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <label>
+                                <input id="accessibility_agreement" type="checkbox" value="yes" />
+                                <span>I have read and agree to comply with use-R! 2021 accessibility standards</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="row">
+                        {{ editUi }}
+                    </div>
+                    <div class="row">
+                        {{ updateNote }}
+                    </div>
+                    <div class="row">
+                        {{ errorNote }}
+                    </div>
+                </div>
+                <!-- Main Form END  -->
+            </form>
+
+        </div>
+        <!-- Main Div END  -->
+    </div>
+    <!-- Body Div END  -->
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('textarea#description, textarea#outline, textarea#objectives').characterCounter();
+            $('select').formSelect();
+        });
+    </script>
+
+
+</body>
+
+
+
+</html>

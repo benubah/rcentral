@@ -1,0 +1,125 @@
+
+/*fix size of logo and provide a bigger one, so it doesn't look blurry on retina*/
+.navbar-brand>img {
+  width: 50px;
+}
+
+
+header .intro-text .intro-heading {
+  /*text-transform: uppercase !important;*/
+  font-size: 1.5em !important;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+#heading-breadcrumbs h1 {
+  letter-spacing: 0.08em;
+  margin-top: 20px;  
+}
+
+
+@media (min-width: 768px) {
+  header .intro-text .intro-heading {
+    /*text-transform: uppercase !important;*/
+    font-size: 2.5em !important;
+  }
+}
+
+
+
+/* some custom stuff for the blog START */
+
+.catchy{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catchy-big{
+  columns: #555555;
+  font-size: 4em;
+  line-height: 1.1;
+}
+
+.catchy-mid{
+  columns: #555555;
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+
+.sponsor-cat{
+  columns: #555555;
+  font-size: .7em;
+  text-align: left;
+  padding-bottom:5px;
+  
+}
+
+
+.catchy-small{
+  columns: #555555;
+  font-size: 1em;
+  text-align: right;
+  
+}
+
+.imgpost{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align:center;
+}
+
+.postcaption{
+  font-size: 0.8em;
+  
+
+}
+
+/* some custom stuff for the blog END */
+
+
+#footer{
+  background-color: #333;
+}
+
+
+/*hero fixes*/
+header#hero {
+  background-image: url(/img/artwork/marmot.png);
+  background-size: 220px;
+  background-repeat: no-repeat;
+  background-position: right 50px bottom 50px;
+  padding: 50 50 50 50px;
+}
+
+header#hero .heading h1 {
+  border-bottom: none;
+  line-height: 1.2;
+}
+
+header#hero .overlay {
+  background: none;
+}
+
+
+
+
+.intro-subtitle {
+  color:#e9e9e9 !important;
+  border-top: solid 5px #467fbf;
+  font-size: 4rem !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+
+/*blue subpage header (instead of grey pattern*/
+#heading-breadcrumbs {
+  background: rgba(33,101,182);
+  /*background: url(/img/artwork/marmot-user.png) center center repeat;*/
+}
+
+#heading-breadcrumbs h1 {
+  color: #fff
+}
+
+
