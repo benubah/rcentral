@@ -29,6 +29,11 @@ v.end = moment.tz(v.end, timeZone).format();
       right: 'timeGridWeek,listWeek,dayGridMonth,timeGridDay'
     },
 initialDate: '2021-07-04',
+titleFormat: { // will produce something like "Tuesday, September 18, 2018"
+    month: 'long',
+    year: 'numeric',
+    day: 'numeric'
+  },
     initialView: 'timeGridWeek',
 height: "auto",
         slotDuration: "00:30:00",
@@ -47,6 +52,9 @@ height: "auto",
         container: 'body'
       });
     },
+dayHeaderContent: (args) => {
+    return moment(args.date).format('dddd Do')
+},
 
 events: evnt,
 timeZone: timeZone,
