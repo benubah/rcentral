@@ -1,51 +1,53 @@
 [ {    				"title": "Welcome (PDT)",
-                                "description":"Welcome Session (PDT Time). 2021.07.04 23:00 - 23:59 UTC",
+                                "description":"Welcome Session (PDT Time). 2021.07.05 00:15 - 01:15 UTC",
           				"url": "#",
 					"color":"#1b65b7",
-					"start": "2021-07-04T23:00:00Z",
-"end": "2021-07-04T23:59:00Z"
+					"start": "2021-07-05T00:15:00Z",
+"end": "2021-07-05T01:15:00Z"
 				},
 
-{    				"title": "SOCIAL",
-                                "description":"SOCIAL PROGRAM. Timezone Advantage: Americas (PDT). July 5th 00:00 - 02:00 UTC",
+{    				"title": "SOCIAL (PDT)",
+                                "description":"SOCIAL PROGRAM. July 5th 01:15 - 02:15 UTC",
           				"url": "#",
 					"color":"#e6cece",
 					"textColor":"black",
-					"start": "2021-07-05T00:00:00Z",
-"end": "2021-07-05T02:00:00Z"
+					"start": "2021-07-05T01:15:00Z",
+"end": "2021-07-05T02:15:00Z"
 				},
+ 
+
 
 {    				"title": "Welcome (AWST)",
-                                "description":"WELCOME SESSION (AWST TIME). July 7th, 06:00 - 07:00 UTC",
+                                "description":"WELCOME SESSION (AWST TIME). July 7th, 07:15 - 08:15 UTC",
           				"url": "#",
 					"color":"#1b65b7",
-					"start": "2021-07-05T06:00:00Z",
-"end": "2021-07-05T07:00:00Z"
+					"start": "2021-07-05T07:15:00Z",
+"end": "2021-07-05T08:15:00Z"
 				},
 
 {    				"title": "SOCIAL",
-                                "description":"SOCIAL PROGRAM. July 5th, 07:00 - 09:15 UTC",
+                                "description":"SOCIAL PROGRAM. July 5th, 08:15 - 09:15 UTC",
           				"url": "#",
 					"color":"#e6cece",
 					"textColor":"black",
-					"start": "2021-07-05T07:00:00Z",
+					"start": "2021-07-05T08:15:00Z",
 "end": "2021-07-05T09:15:00Z"
 				},
 
 {    				"title": "Welcome (CEST)",
-                                "description":"WELCOME SESSION (CEST TIME) July 5th 14:00-13:00 UTC",
+                                "description":"WELCOME SESSION (CEST TIME) July 5th 15:15-16:15 UTC",
           				"url": "#",
 					"color":"#1b65b7",
-					"start": "2021-07-05T14:00:00Z",
-"end": "2021-07-05T15:00:00Z"
+					"start": "2021-07-05T15:15:00Z",
+"end": "2021-07-05T16:15:00Z"
 				},
 
 {    				"title": "SOCIAL",
-                                "description":"SOCIAL PROGRAM. July 5th 15:00 - 17:15 UTC",
+                                "description":"SOCIAL PROGRAM. July 5th 16:15 - 17:15 UTC",
           				"url": "#",
 					"color":"#e6cece",
 					"textColor":"black",
-					"start": "2021-07-05T15:00:00Z",
+					"start": "2021-07-05T16:15:00Z",
 "end": "2021-07-05T17:15:00Z"
 				},
 
@@ -88,12 +90,12 @@
 "end": "2021-07-06T19:00:00Z"
 				},
 {    				"title": "TUTORIALS",
-                                "description":"TUTORIALS. July 7th 08:30 - 17:45 UTC",
+                                "description":"TUTORIALS. July 7th 00:00 - 23:59 UTC",
           				"url": "#",
 					"color": "#fffe01",
 					"textColor":"black",
-					"start": "2021-07-07T08:30:00Z",
-"end": "2021-07-07T17:45:00Z"
+					"start": "2021-07-07T00:30:00Z",
+"end": "2021-07-07T23:59:00Z"
 				},
 
 {    				"title": "CONFERENCE PROGRAM",
