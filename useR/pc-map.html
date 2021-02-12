@@ -1,0 +1,72 @@
+
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>useR! 2021 Program Committee </title>
+
+    <link href="https://r-community.github.io/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://r-community.github.io/resources/leaflet-1.5.1/leaflet.css"/>
+<link rel="stylesheet" href="https://r-community.github.io/resources/leaflet-awesome-markers/dist/leaflet.awesome-markers.css">
+<link rel="stylesheet" href="https://r-community.github.io/resources/leaflet.markercluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="https://r-community.github.io/resources/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+<link href="https://r-community.github.io/resources/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://r-community.github.io/resources/css/custom.min.css" rel="stylesheet">
+
+    <script src="https://r-community.github.io/resources/js/jquery.min.js"></script> 
+   <script src="https://r-community.github.io/resources/leaflet-1.5.1/leaflet.js"></script>
+    <script src="https://r-community.github.io/resources/leaflet-awesome-markers/dist/leaflet.awesome-markers.js"></script>
+<script src="https://r-community.github.io/resources/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+  <style>
+    #map{ height: 100%; width:100%; }
+    .popup {font-size:1.5rem;}
+    .fa {font-size:2.5rem;}
+    a .fa {margin-right:10px;}
+  </style>
+</head>
+<body style="background:#ffffff;" >
+
+  <div id="map"></div>
+
+	<script type="text/javascript">// initialize the map
+  var map = L.map('map', { maxZoom: 2}).setView([10, 10],2);
+  // load a tile layer
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+       
+    }).addTo(map);
+  // load GeoJSON from an external file
+  $.getJSON("data/pcMap.geojson",function(data){
+	//console.log(data.features[0])
+
+L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
+var darkblueMarker = L.AwesomeMarkers.icon({
+icon: 'user',
+markerColor: 'darkblue'
+  });
+	
+     var markers = L.markerClusterGroup({
+maxClusterRadius: function (zoom) {
+        return (zoom <= 10) ? 50 : 1; // radius in pixels
+    }
+});
+		
+		for (var i = 0; i < data.features.length; i++) {
+			var a = data.features[i].geometry.coordinates;
+			var marker = L.marker(new L.LatLng(a[1], a[0]), {icon: darkblueMarker});
+			marker.bindPopup('<b class="popup">' + data.features[i].properties.FullName + '</b>' + '<br>' + '<a href ='+ data.features[i].properties.Twitter + '><i class="fa fa-twitter"></i>' +  '<a href ='+ data.features[i].properties.LinkedIn + '><i class="fa fa-linkedin"></i>' +  '<a href ='+ data.features[i].properties.Website + '><i class="fa fa-globe"></i>'+ '<br/>' );
+			markers.addLayer(marker);
+}		
+		map.addLayer(markers);
+ });
+  
+  </script>
+</body>
+</html>
+	
