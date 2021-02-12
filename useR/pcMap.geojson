@@ -1,10 +1,10 @@
-{
+ï»¿{
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Laura Ación",
+        "FullName": "Laura AciÃ³n",
         "Countries": "Argentina",
         "Twitter": "https://twitter.com/_lacion_",
         "LinkedIn": "NA",
@@ -144,7 +144,7 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Marcela Alfaro Córdoba",
+        "FullName": "Marcela Alfaro CÃ³rdoba",
         "Countries": "Costa Rica",
         "Twitter": "https://twitter.com/Fichulina",
         "LinkedIn": "NA",
@@ -242,10 +242,10 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Germán Federico Rosati",
+        "FullName": "GermÃ¡n Federico Rosati",
         "Countries": "Argentina",
         "Twitter": "https://twitter.com/Crst_C",
-        "LinkedIn": "https://www.linkedin.com/in/germán-rosati-53637263",
+        "LinkedIn": "https://www.linkedin.com/in/germÃ¡n-rosati-53637263",
         "Website": "https://gefero.github.io/"
       },
       "geometry": {
@@ -438,7 +438,7 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Andrea Sánchez-Tapia",
+        "FullName": "Andrea SÃ¡nchez-Tapia",
         "Countries": "Colombia",
         "Twitter": "https://twitter.com/SanchezTapiaA",
         "LinkedIn": "NA",
@@ -452,7 +452,7 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Andrea Sánchez-Tapia",
+        "FullName": "Andrea SÃ¡nchez-Tapia",
         "Countries": "Brazil",
         "Twitter": "https://twitter.com/SanchezTapiaA",
         "LinkedIn": "NA",
@@ -578,7 +578,7 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Sina Rüeger",
+        "FullName": "Sina RÃ¼eger",
         "Countries": "Switzerland",
         "Twitter": "https://twitter.com/sinarueeger",
         "LinkedIn": "NA",
