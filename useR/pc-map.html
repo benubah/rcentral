@@ -42,7 +42,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
        
     }).addTo(map);
   // load GeoJSON from an external file
-  $.getJSON("data/pcMap.geojson",function(data){
+  $.getJSON("pcMap.geojson",function(data){
 	//console.log(data.features[0])
 
 L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
