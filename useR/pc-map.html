@@ -22,11 +22,12 @@
     <script src="https://r-community.github.io/resources/leaflet-awesome-markers/dist/leaflet.awesome-markers.js"></script>
 <script src="https://r-community.github.io/resources/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
-  <style>
+ <style>
     #map{ height: 100%; width:100%; }
     .popup {font-size:1.5rem;}
     .fa {font-size:2.5rem;}
     a .fa {margin-right:10px;}
+     .flag-icon {margin-right:10px; }
   </style>
 </head>
 <body style="background:#ffffff;" >
@@ -43,8 +44,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
     }).addTo(map);
   // load GeoJSON from an external file
   $.getJSON("pcMap.geojson",function(data){
-	//console.log(data.features[0])
-
 L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
 var darkblueMarker = L.AwesomeMarkers.icon({
 icon: 'user',
@@ -56,16 +55,17 @@ maxClusterRadius: function (zoom) {
         return (zoom <= 10) ? 70 : 1; // radius in pixels
     }
 });
-		
+	//  console.log(data.features[2].properties.countrycode);
+	
 		for (var i = 0; i < data.features.length; i++) {
 			var a = data.features[i].geometry.coordinates;
 			var marker = L.marker(new L.LatLng(a[1], a[0]), {icon: darkblueMarker});
-			marker.bindPopup('<b class="popup">' + data.features[i].properties.FullName + '</b>' + '<br>' + '<a href ='+ data.features[i].properties.Twitter + '><i class="fa fa-twitter"></i>' +  '<a href ='+ data.features[i].properties.LinkedIn + '><i class="fa fa-linkedin"></i>' +  '<a href ='+ data.features[i].properties.Website + '><i class="fa fa-globe"></i>'+ '<br/>' );
+			marker.bindPopup('<b class="popup">' + data.features[i].properties.FullName + '</b>' + '<br><br>' + '<img class="flag" src='+data.features[i].properties.countrycode+' alt="Country Flag">' + '<br><br>' + '<a href ='+ data.features[i].properties.Twitter + '><i class="fa fa-twitter"></i>' +  '<a href ='+ data.features[i].properties.LinkedIn + '><i class="fa fa-linkedin"></i>' +  '<a href ='+ data.features[i].properties.Website + '><i class="fa fa-globe"></i></a>'+ '<br/>');
 			markers.addLayer(marker);
 }		
 		map.addLayer(markers);
  });
-  
+  console.log();
   </script>
 </body>
 </html>
