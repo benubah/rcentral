@@ -321,9 +321,9 @@
       "properties": {
         "FullName": "PC Member",
         "Countries": "Israel",
-        "Twitter": "https://twitter.com/GorfineMalka",
+        "Twitter": "#",
         "LinkedIn": "NA",
-        "Website": "https://www.tau.ac.il/~gorfinem/",
+        "Website": "#",
         "countrycode": "flag-icons/flags/4x3/il.svg"
       },
       "geometry": {
