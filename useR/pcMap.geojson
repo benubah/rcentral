@@ -4,25 +4,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Laura Ación",
-        "Countries": "Argentina",
-        "Twitter": "https://twitter.com/_lacion_",
-        "LinkedIn": "NA",
-        "Website": "https://lacion.rbind.io/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-64.967282,-34.996496]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "FullName": "Maia Lesosky",
         "Countries": "South Africa",
         "Twitter": "https://twitter.com/BiostatsLAB",
         "LinkedIn": "NA",
-        "Website": "https://www.biostatslab.africa"
+        "Website": "https://www.biostatslab.africa",
+        "countrycode": "flag-icons/flags/4x3/za.svg"
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +23,8 @@
         "Countries": "USA",
         "Twitter": "https://twitter.com/bedatadriven",
         "LinkedIn": "https://www.linkedin.com/in/alexander-bertram-3938873/",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
       },
       "geometry": {
         "type": "Point",
@@ -46,15 +34,16 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Alexander Bertram",
-        "Countries": "The Netherlands",
-        "Twitter": "https://twitter.com/bedatadriven",
-        "LinkedIn": "https://www.linkedin.com/in/alexander-bertram-3938873/",
-        "Website": "NA"
+        "FullName": "PC Member",
+        "Countries": "France",
+        "Twitter": "#",
+        "LinkedIn": "NA",
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/fr.svg"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [5.7480821,52.5001698]
+        "coordinates": [1.8883335,46.603354]
       }
     },
     {
@@ -64,7 +53,8 @@
         "Countries": "Uruguay",
         "Twitter": "https://twitter.com/pacocuak",
         "LinkedIn": "https://www.linkedin.com/in/natalia-da-silva-770700a1",
-        "Website": "https://natydasilva.com"
+        "Website": "https://natydasilva.com",
+        "countrycode": "flag-icons/flags/4x3/uy.svg"
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +68,8 @@
         "Countries": "The Netherlands",
         "Twitter": "https://twitter.com/markvdloo",
         "LinkedIn": "https://nl.linkedin.com/in/markvanderloo",
-        "Website": "https://markvanderloo.eu"
+        "Website": "https://markvanderloo.eu",
+        "countrycode": "flag-icons/flags/4x3/nl.svg"
       },
       "geometry": {
         "type": "Point",
@@ -92,7 +83,8 @@
         "Countries": "India",
         "Twitter": "https://twitter.com/DootikaV",
         "LinkedIn": "https://www.linkedin.com/in/dootika-vats-13223b140/",
-        "Website": "https://dvats.github.io/"
+        "Website": "https://dvats.github.io/",
+        "countrycode": "flag-icons/flags/4x3/in.svg"
       },
       "geometry": {
         "type": "Point",
@@ -102,11 +94,27 @@
     {
       "type": "Feature",
       "properties": {
+        "FullName": "PC Member",
+        "Countries": "Germany",
+        "Twitter": "https://twitter.com/BBischl",
+        "LinkedIn": "NA",
+        "Website": "https://www.slds.stat.uni-muenchen.de/",
+        "countrycode": "flag-icons/flags/4x3/de.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [10.451526,51.165691]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "FullName": "Bruno Santos",
         "Countries": "Brazil",
         "Twitter": "https://twitter.com/brsantos86",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/br.svg"
       },
       "geometry": {
         "type": "Point",
@@ -120,7 +128,8 @@
         "Countries": "Hungary",
         "Twitter": "https://twitter.com/daroczig",
         "LinkedIn": "https://www.linkedin.com/in/daroczig",
-        "Website": "https://daroczig.github.io"
+        "Website": "https://daroczig.github.io",
+        "countrycode": "flag-icons/flags/4x3/hu.svg"
       },
       "geometry": {
         "type": "Point",
@@ -134,7 +143,8 @@
         "Countries": "Denmark",
         "Twitter": "https://twitter.com/thomasp85",
         "LinkedIn": "NA",
-        "Website": "https://data-imagining.com"
+        "Website": "https://data-imagining.com",
+        "countrycode": "flag-icons/flags/4x3/dk.svg"
       },
       "geometry": {
         "type": "Point",
@@ -148,7 +158,8 @@
         "Countries": "Costa Rica",
         "Twitter": "https://twitter.com/Fichulina",
         "LinkedIn": "NA",
-        "Website": "https://malfaro.netlify.app/"
+        "Website": "https://malfaro.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/cr.svg"
       },
       "geometry": {
         "type": "Point",
@@ -162,7 +173,8 @@
         "Countries": "Italy",
         "Twitter": "https://twitter.com/FedeBioinfo",
         "LinkedIn": "NA",
-        "Website": "https://federicomarini.github.io"
+        "Website": "https://federicomarini.github.io",
+        "countrycode": "flag-icons/flags/4x3/it.svg"
       },
       "geometry": {
         "type": "Point",
@@ -172,25 +184,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Federico Marini",
-        "Countries": "Germany",
-        "Twitter": "https://twitter.com/FedeBioinfo",
-        "LinkedIn": "NA",
-        "Website": "https://federicomarini.github.io"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [10.4234469,51.0834196]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "FullName": "Zhian Namir Kamvar",
         "Countries": "USA",
         "Twitter": "https://twitter.com/zkamvar",
         "LinkedIn": "https://www.linkedin.com/in/zkamvar/",
-        "Website": "https://zkamvar.netlify.com"
+        "Website": "https://zkamvar.netlify.com",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
       },
       "geometry": {
         "type": "Point",
@@ -204,7 +203,8 @@
         "Countries": "France",
         "Twitter": "https://twitter.com/_colinfay",
         "LinkedIn": "NA",
-        "Website": "https://colinfay.me"
+        "Website": "https://colinfay.me",
+        "countrycode": "flag-icons/flags/4x3/fr.svg"
       },
       "geometry": {
         "type": "Point",
@@ -218,7 +218,8 @@
         "Countries": "Argentina",
         "Twitter": "https://twitter.com/Nat_Mora_",
         "LinkedIn": "https://www.linkedin.com/in/natalia-morandeira-97083044/",
-        "Website": "https://nmorandeira.netlify.app/"
+        "Website": "https://nmorandeira.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/ar.svg"
       },
       "geometry": {
         "type": "Point",
@@ -228,11 +229,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Dr. Param Jeet",
+        "FullName": "Param Jeet",
         "Countries": "India",
         "Twitter": "NA",
         "LinkedIn": "https://www.linkedin.com/in/dr-param-jeet-a7a86411/",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/in.svg"
       },
       "geometry": {
         "type": "Point",
@@ -246,7 +248,8 @@
         "Countries": "Argentina",
         "Twitter": "https://twitter.com/Crst_C",
         "LinkedIn": "https://www.linkedin.com/in/germán-rosati-53637263",
-        "Website": "https://gefero.github.io/"
+        "Website": "https://gefero.github.io/",
+        "countrycode": "flag-icons/flags/4x3/ar.svg"
       },
       "geometry": {
         "type": "Point",
@@ -260,7 +263,8 @@
         "Countries": "Mexico",
         "Twitter": "https://twitter.com/TeresaOM",
         "LinkedIn": "https://www.linkedin.com/in/tereom/",
-        "Website": "https://tereom.netlify.app/"
+        "Website": "https://tereom.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/mx.svg"
       },
       "geometry": {
         "type": "Point",
@@ -270,11 +274,72 @@
     {
       "type": "Feature",
       "properties": {
+        "FullName": "PC Member",
+        "Countries": "UK",
+        "Twitter": "#",
+        "LinkedIn": "#",
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/uk.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.2765753,54.7023545]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FullName": "PC Member",
+        "Countries": "Canada",
+        "Twitter": "#",
+        "LinkedIn": "NA",
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/ca.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-107.991707,61.0666922]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FullName": "PC Member",
+        "Countries": "USA",
+        "Twitter": "#",
+        "LinkedIn": "#",
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-100.4458825,39.7837304]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FullName": "PC Member",
+        "Countries": "Israel",
+        "Twitter": "https://twitter.com/GorfineMalka",
+        "LinkedIn": "NA",
+        "Website": "https://www.tau.ac.il/~gorfinem/",
+        "countrycode": "flag-icons/flags/4x3/il.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [34.851612,31.046051]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "FullName": "Ildiko Czeller",
         "Countries": "Hungary",
         "Twitter": "https://twitter.com/czeildi",
         "LinkedIn": "NA",
-        "Website": "https://ildiczeller.com"
+        "Website": "https://ildiczeller.com",
+        "countrycode": "flag-icons/flags/4x3/hu.svg"
       },
       "geometry": {
         "type": "Point",
@@ -284,11 +349,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Dr Inger Fabris-Rotelli",
+        "FullName": "Inger Fabris-Rotelli",
         "Countries": "South Africa",
         "Twitter": "NA",
         "LinkedIn": "https://www.linkedin.com/in/inger-fabris-rotelli-7502a77b/",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/za.svg"
       },
       "geometry": {
         "type": "Point",
@@ -298,11 +364,27 @@
     {
       "type": "Feature",
       "properties": {
+        "FullName": "PC Member",
+        "Countries": "UK",
+        "Twitter": "#",
+        "LinkedIn": "NA",
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/uk.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.2765753,54.7023545]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "FullName": "Emi Tanaka",
         "Countries": "Australia",
         "Twitter": "https://twitter.com/statsgen",
         "LinkedIn": "NA",
-        "Website": "http://emitanaka.org/"
+        "Website": "http://emitanaka.org/",
+        "countrycode": "flag-icons/flags/4x3/au.svg"
       },
       "geometry": {
         "type": "Point",
@@ -316,25 +398,12 @@
         "Countries": "Australia",
         "Twitter": "https://twitter.com/Sevvandik",
         "LinkedIn": "https://www.linkedin.com/in/sevvandi-kandanaarachchi-51288a54/?originalSubdomain=au",
-        "Website": "https://sevvandi.netlify.app/"
+        "Website": "https://sevvandi.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/au.svg"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [134.755,-24.7761086]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FullName": "Sevvandi Kandanaarachchi",
-        "Countries": "Sri Lanka",
-        "Twitter": "https://twitter.com/Sevvandik",
-        "LinkedIn": "https://www.linkedin.com/in/sevvandi-kandanaarachchi-51288a54/?originalSubdomain=au",
-        "Website": "https://sevvandi.netlify.app/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [80.7137847,7.5554942]
       }
     },
     {
@@ -344,7 +413,8 @@
         "Countries": "New Zealand",
         "Twitter": "NA",
         "LinkedIn": "NA",
-        "Website": "https://www.stat.auckland.ac.nz/~paul/index.html"
+        "Website": "https://www.stat.auckland.ac.nz/~paul/index.html",
+        "countrycode": "flag-icons/flags/4x3/nz.svg"
       },
       "geometry": {
         "type": "Point",
@@ -358,7 +428,8 @@
         "Countries": "Israel",
         "Twitter": "https://twitter.com/MichaelDorman84",
         "LinkedIn": "NA",
-        "Website": "https://geobgu.xyz/"
+        "Website": "https://geobgu.xyz/",
+        "countrycode": "flag-icons/flags/4x3/il.svg"
       },
       "geometry": {
         "type": "Point",
@@ -372,7 +443,8 @@
         "Countries": "India",
         "Twitter": "NA",
         "LinkedIn": "https://www.linkedin.com/in/imran-hossain-34914821",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/in.svg"
       },
       "geometry": {
         "type": "Point",
@@ -382,11 +454,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Shelmith Nyagathiri Kariuki",
+        "FullName": "Shelmith Kariuki",
         "Countries": "Kenya",
         "Twitter": "https://twitter.com/Shel_Kariuki",
         "LinkedIn": "https://www.linkedin.com/in/shelmith-kariuki-44351363/",
-        "Website": "https://shelkariuki.netlify.app/"
+        "Website": "https://shelkariuki.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/ke.svg"
       },
       "geometry": {
         "type": "Point",
@@ -396,11 +469,27 @@
     {
       "type": "Feature",
       "properties": {
+        "FullName": "PC Member",
+        "Countries": "UK",
+        "Twitter": "#",
+        "LinkedIn": "NA",
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/uk.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-3.2765753,54.7023545]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "FullName": "Leonardo Collado Torres",
         "Countries": "Mexico",
         "Twitter": "https://twitter.com/lcolladotor",
         "LinkedIn": "https://www.linkedin.com/in/lcollado/",
-        "Website": "https://lcolladotor.github.io/"
+        "Website": "https://lcolladotor.github.io/",
+        "countrycode": "flag-icons/flags/4x3/mx.svg"
       },
       "geometry": {
         "type": "Point",
@@ -414,7 +503,8 @@
         "Countries": "Kenya",
         "Twitter": "https://twitter.com/krissianyo",
         "LinkedIn": "https://www.linkedin.com/in/christopher-maronga-61031b7a/",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/ke.svg"
       },
       "geometry": {
         "type": "Point",
@@ -424,11 +514,27 @@
     {
       "type": "Feature",
       "properties": {
+        "FullName": "PC Member",
+        "Countries": "Switzerland",
+        "Twitter": "",
+        "LinkedIn": "NA",
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/ch.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.227512,46.818188]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "FullName": "Maria Tackett",
         "Countries": "USA",
         "Twitter": "https://twitter.com/MT_statistics",
         "LinkedIn": "NA",
-        "Website": "https://www.mariatackett.net/"
+        "Website": "https://www.mariatackett.net/",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
       },
       "geometry": {
         "type": "Point",
@@ -442,7 +548,8 @@
         "Countries": "Colombia",
         "Twitter": "https://twitter.com/SanchezTapiaA",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/co.svg"
       },
       "geometry": {
         "type": "Point",
@@ -452,15 +559,16 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Andrea Sánchez-Tapia",
-        "Countries": "Brazil",
-        "Twitter": "https://twitter.com/SanchezTapiaA",
+        "FullName": "PC Member",
+        "Countries": "Germany",
+        "Twitter": "#",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/de.svg"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.2,-10.3333333]
+        "coordinates": [10.451526,51.165691]
       }
     },
     {
@@ -470,7 +578,8 @@
         "Countries": "South Africa",
         "Twitter": "https://twitter.com/datawookie",
         "LinkedIn": "https://www.linkedin.com/in/datawookie",
-        "Website": "https://datawookie.netlify.app/"
+        "Website": "https://datawookie.netlify.app/",
+        "countrycode": "flag-icons/flags/4x3/za.svg"
       },
       "geometry": {
         "type": "Point",
@@ -480,25 +589,12 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Andrew Collier",
-        "Countries": "UK",
-        "Twitter": "https://twitter.com/datawookie",
-        "LinkedIn": "https://www.linkedin.com/in/datawookie",
-        "Website": "https://datawookie.netlify.app/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-3.2765753,54.7023545]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "FullName": "Gabriel Becker",
         "Countries": "USA",
         "Twitter": "https://twitter.com/groundwalkergmb",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
       },
       "geometry": {
         "type": "Point",
@@ -512,7 +608,8 @@
         "Countries": "UK",
         "Twitter": "https://twitter.com/Bahman_R_T",
         "LinkedIn": "NA",
-        "Website": "https://www.bahmanrt.com"
+        "Website": "https://www.bahmanrt.com",
+        "countrycode": "flag-icons/flags/4x3/uk.svg"
       },
       "geometry": {
         "type": "Point",
@@ -526,7 +623,8 @@
         "Countries": "USA",
         "Twitter": "https://twitter.com/janani137",
         "LinkedIn": "NA",
-        "Website": "https://jravilab.github.io"
+        "Website": "https://jravilab.github.io",
+        "countrycode": "flag-icons/flags/4x3/us.svg"
       },
       "geometry": {
         "type": "Point",
@@ -536,15 +634,31 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Janani Ravi",
-        "Countries": "India",
-        "Twitter": "https://twitter.com/janani137",
+        "FullName": "PC Member",
+        "Countries": "Senegal",
+        "Twitter": "#",
         "LinkedIn": "NA",
-        "Website": "https://jravilab.github.io"
+        "Website": "#",
+        "countrycode": "flag-icons/flags/4x3/sn.svg"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [78.6677428,22.3511148]
+        "coordinates": [-14.452362,14.497401]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FullName": "PC Member",
+        "Countries": "South Korea",
+        "Twitter": "NA",
+        "LinkedIn": "NA",
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/kr.svg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [127.766922,35.907757]
       }
     },
     {
@@ -554,7 +668,8 @@
         "Countries": "Canada",
         "Twitter": "https://twitter.com/bolkerb",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/ca.svg"
       },
       "geometry": {
         "type": "Point",
@@ -568,7 +683,8 @@
         "Countries": "Australia",
         "Twitter": "https://twitter.com/djnavarro",
         "LinkedIn": "NA",
-        "Website": "https://djnavarro.net"
+        "Website": "https://djnavarro.net",
+        "countrycode": "flag-icons/flags/4x3/au.svg"
       },
       "geometry": {
         "type": "Point",
@@ -582,7 +698,8 @@
         "Countries": "Switzerland",
         "Twitter": "https://twitter.com/sinarueeger",
         "LinkedIn": "NA",
-        "Website": "NA"
+        "Website": "NA",
+        "countrycode": "flag-icons/flags/4x3/ch.svg"
       },
       "geometry": {
         "type": "Point",
