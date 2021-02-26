@@ -279,7 +279,7 @@
         "Twitter": "#",
         "LinkedIn": "#",
         "Website": "#",
-        "countrycode": "flag-icons/flags/4x3/uk.svg"
+        "countrycode": "flag-icons/flags/4x3/gb.svg"
       },
       "geometry": {
         "type": "Point",
@@ -369,7 +369,7 @@
         "Twitter": "#",
         "LinkedIn": "NA",
         "Website": "NA",
-        "countrycode": "flag-icons/flags/4x3/uk.svg"
+        "countrycode": "flag-icons/flags/4x3/gb.svg"
       },
       "geometry": {
         "type": "Point",
@@ -454,11 +454,11 @@
     {
       "type": "Feature",
       "properties": {
-        "FullName": "Shelmith Kariuki",
+        "FullName": "Shelmith Karigbi",
         "Countries": "Kenya",
-        "Twitter": "https://twitter.com/Shel_Kariuki",
-        "LinkedIn": "https://www.linkedin.com/in/shelmith-kariuki-44351363/",
-        "Website": "https://shelkariuki.netlify.app/",
+        "Twitter": "https://twitter.com/Shel_Karigbi",
+        "LinkedIn": "https://www.linkedin.com/in/shelmith-karigbi-44351363/",
+        "Website": "https://shelkarigbi.netlify.app/",
         "countrycode": "flag-icons/flags/4x3/ke.svg"
       },
       "geometry": {
@@ -474,7 +474,7 @@
         "Twitter": "#",
         "LinkedIn": "NA",
         "Website": "NA",
-        "countrycode": "flag-icons/flags/4x3/uk.svg"
+        "countrycode": "flag-icons/flags/4x3/gb.svg"
       },
       "geometry": {
         "type": "Point",
@@ -609,7 +609,7 @@
         "Twitter": "https://twitter.com/Bahman_R_T",
         "LinkedIn": "NA",
         "Website": "https://www.bahmanrt.com",
-        "countrycode": "flag-icons/flags/4x3/uk.svg"
+        "countrycode": "flag-icons/flags/4x3/gb.svg"
       },
       "geometry": {
         "type": "Point",
