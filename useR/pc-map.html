@@ -60,7 +60,7 @@ maxClusterRadius: function (zoom) {
 		for (var i = 0; i < data.features.length; i++) {
 			var a = data.features[i].geometry.coordinates;
 			var marker = L.marker(new L.LatLng(a[1], a[0]), {icon: darkblueMarker});
-			marker.bindPopup('<b class="popup">' + data.features[i].properties.FullName + '</b>' + '<br><br>' + '<img class="flag" src='+data.features[i].properties.countrycode+' alt="Country Flag">' + '<br><br>' + '<a href ='+ data.features[i].properties.Twitter + '><i class="fa fa-twitter"></i>' +  '<a href ='+ data.features[i].properties.LinkedIn + '><i class="fa fa-linkedin"></i>' +  '<a href ='+ data.features[i].properties.Website + '><i class="fa fa-globe"></i></a>'+ '<br/>');
+			marker.bindPopup('<b class="popup">' + data.features[i].properties.FullName + '</b>' + '<br>' + data.features[i].properties.Countries + '<br>' +  '<img class="flag" src='+data.features[i].properties.countrycode+' width="70" height="70" alt="Country Flag">' + '<br>' + '<a href ='+ data.features[i].properties.Twitter + '><i class="fa fa-twitter"></i>' +  '<a href ='+ data.features[i].properties.LinkedIn + '><i class="fa fa-linkedin"></i>' +  '<a href ='+ data.features[i].properties.Website + '><i class="fa fa-globe"></i></a>'+ '<br/>');
 			markers.addLayer(marker);
 }		
 		map.addLayer(markers);
