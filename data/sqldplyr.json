@@ -1,0 +1,1 @@
+{"dplyr":"mytable %>%\n  filter(a > b) %>%\n  select(a, b)","dm":"mytable <- tibble::tibble(\n  a = logical(0),\n  b = logical(0)\n)\ndm::dm(mytable)","structure":[{"table":"mytable","columns":"a, b"}]}
