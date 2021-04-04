@@ -1,1 +1,14 @@
-{"dplyr":"mytable %>%\n  filter(a > b) %>%\n  select(a, b)","dm":"mytable <- tibble::tibble(\n  a = logical(0),\n  b = logical(0)\n)\ndm::dm(mytable)","structure":[{"table":"mytable","columns":"a, b"}]}
+{
+  "dplyr": "tbl %>%\n  left_join(tbl_2, by = \"b\", suffix = c(\".tbl\", \".tbl_2\"), na_matches = \"never\") %>%\n  select(a, b)",
+  "dm": "tbl <- tibble::tibble(\n  a = logical(0),\n  b = logical(0)\n)\ntbl_2 <- tibble::tibble(\n  b = logical(0)\n)\ndm::dm(tbl, tbl_2)",
+  "structure": [
+    {
+      "table": "tbl",
+      "columns": "a, b"
+    },
+    {
+      "table": "tbl_2",
+      "columns": "b"
+    }
+  ]
+}
