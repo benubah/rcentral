@@ -54,8 +54,6 @@ visibleRange: {
   },
       buttonText: 'Day'
     }
-
-
   },
     headerToolbar: {
       left: 'prev,next today',
@@ -69,6 +67,7 @@ visibleRange: {
 {id: 'Track 4', title: 'Track 4', eventBackgroundColor: 'red'}
 ],
 resourceAreaHeaderContent: 'Tracks',
+resourceAreaWidth: '10%',
 initialDate: '2021-07-06',
 //slotMinTime: min_time,
 initialView: 'resourceTimeGridTwoDay',
