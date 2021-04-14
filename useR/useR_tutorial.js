@@ -56,9 +56,9 @@ visibleRange: {
     }
   },
     headerToolbar: {
-      left: 'prev,next today',
+      left: 'prev,next',
       center: 'title',
-      right: 'resourceTimeGridTwoDay,resourceTimelineTwoDay,timeGridTwoDay'
+      right: 'resourceTimelineTwoDay,resourceTimeGridTwoDay,timeGridTwoDay'
     },
    resources: [
 	{id: 'Track 1', title: 'Track 1'},
