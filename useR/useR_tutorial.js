@@ -33,24 +33,44 @@ visibleRange: {
     start: '2021-07-06',
     end: '2021-07-07'
   },
+      buttonText: 'Time Grid'
+    },
+resourceTimelineTwoDay: {
+      type: 'resourceTimelineDay',
+      duration: { days: 2 },
+visibleRange: {
+    start: '2021-07-06',
+    end: '2021-07-07'
+  },
+      buttonText: 'Timeline'
+    },
 
-      buttonText: '2-Day'
+timeGridTwoDay: {
+      type: 'timeGridDay',
+      duration: { days: 2 },
+visibleRange: {
+    start: '2021-07-06',
+    end: '2021-07-07'
+  },
+      buttonText: 'Day'
     }
+
+
   },
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'resourceTimeGridTwoDay,resourceTimeGridDay,timeGridWeek'
+      right: 'resourceTimeGridTwoDay,resourceTimelineTwoDay,timeGridTwoDay'
     },
    resources: [
 	{id: 'Track 1', title: 'Track 1'},
-{id: 'Track 2', title: 'Track 2'},
-{id: 'Track 3', title: 'Track 3'},
-{id: 'Track 4', title: 'Track 4'}
+{id: 'Track 2', title: 'Track 2', eventBackgroundColor: 'green'},
+{id: 'Track 3', title: 'Track 3', eventColor: 'orange'},
+{id: 'Track 4', title: 'Track 4', eventBackgroundColor: 'red'}
 ],
 resourceAreaHeaderContent: 'Tracks',
 initialDate: '2021-07-06',
-//slotMinTime: '06:00:00',
+//slotMinTime: min_time,
 initialView: 'resourceTimeGridTwoDay',
 
 height: "auto",
@@ -63,7 +83,7 @@ height: "auto",
 
  eventDidMount: function(info) {
       var tooltip = new Tooltip(info.el, {
-        title: info.event.extendedProps.description,
+        title: info.event.title + " \n " + "\n"+ info.event.extendedProps.instructors,
         placement: 'top',
         trigger: 'hover',
         container: 'body'
@@ -93,7 +113,6 @@ timeZone: timeZone,
   timeZoneSelectorEl.addEventListener('change', function() {
  timeZone = document.getElementById('time-zone-selector').value;
  // min_time = moment.utc('2021-07-06 20:00').tz(timeZone).format("hh:mm:ss");
-//min_time = '00:00:00';
 
 var eventSource = [];
                 eventSource = calendar.getEventSources();
