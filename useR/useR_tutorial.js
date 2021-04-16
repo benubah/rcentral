@@ -54,6 +54,8 @@ visibleRange: {
   },
       buttonText: 'Day'
     }
+
+
   },
     headerToolbar: {
       left: 'prev,next',
@@ -82,10 +84,12 @@ height: "auto",
 
  eventDidMount: function(info) {
       var tooltip = new Tooltip(info.el, {
-        title: info.event.title + " \n " + "\n"+ info.event.extendedProps.instructors,
-        placement: 'top',
+        title: info.event.extendedProps.description,
+        placement: 'right',
         trigger: 'hover',
-        container: 'body'
+	   animation: true, 
+	   html: true,
+	           container: 'body'
       });
     },
 
