@@ -28,7 +28,7 @@ v.end = moment.tz(v.end, timeZone).format();
       center: 'title',
       right: 'timeGridWeek,listWeek,dayGridMonth,timeGridDay'
     },
-initialDate: '2021-07-04',
+initialDate: '2021-07-05',
 titleFormat: { // will produce something like "Tuesday, September 18, 2018"
     month: 'long',
     year: 'numeric',
