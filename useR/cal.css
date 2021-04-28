@@ -37,13 +37,15 @@ white-space: wrap;
 .tooltip {
   position: absolute;
   z-index: 9999;
-  background: #FFC107;
-  color: black;
-  width: 150px;
+  background: #2c3e50;
+  color: white;
+  width: 350px;
+  max-height: 300px;
+  overflow: scroll;
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
   padding: 10px;
-  text-align: center;
+  text-align: justify;
 }
 .style5 .tooltip {
   background: #1E252B;
