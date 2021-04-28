@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var loadingEl = document.getElementById('loading');
   var calendarEl = document.getElementById('calendar');
 evnt = {
-                url: "user2021.json", //your url,
+                url: "useR2021.json", //your url,
                 type: "GET",
                 dataType: "json",
                 success: function (data) {
