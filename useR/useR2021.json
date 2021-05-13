@@ -3,7 +3,7 @@
     "session": "Welcome (PDT)",
     "block": "Social",
     "start": "2021-07-04T22:15:00Z",
-    "end": "2021-07-04T23:15:00Z",
+    "end": "2021-07-04T22:45:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
@@ -11,21 +11,32 @@
     "title": "Social"
   },
   {
-    "session": "Social (PDT)",
+    "session": "Survival Guide (PDT)",
+    "block": "Social",
+    "start": "2021-07-04T22:45:00Z",
+    "end": "2021-07-04T23:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Survival Guide (PDT)",
+    "title": "Social"
+  },
+  {
+    "session": "My first UseR! (PDT)",
     "block": "Social",
     "start": "2021-07-04T23:15:00Z",
     "end": "2021-07-05T00:15:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
-    "description": "Social (PDT)",
+    "description": "My first UseR! (PDT)",
     "title": "Social"
   },
   {
     "session": "Welcome (AWST)",
     "block": "Social",
     "start": "2021-07-05T07:15:00Z",
-    "end": "2021-07-05T08:15:00Z",
+    "end": "2021-07-05T07:45:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
@@ -33,21 +44,32 @@
     "title": "Social"
   },
   {
-    "session": "Social (AWST)",
+    "session": "Survival Guide (AWST)",
+    "block": "Social",
+    "start": "2021-07-05T07:45:00Z",
+    "end": "2021-07-05T08:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Survival Guide (AWST)",
+    "title": "Social"
+  },
+  {
+    "session": "My first UseR! (AWST)",
     "block": "Social",
     "start": "2021-07-05T08:15:00Z",
     "end": "2021-07-05T09:15:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
-    "description": "Social (AWST)",
+    "description": "My first UseR! (AWST)",
     "title": "Social"
   },
   {
     "session": "Welcome (CEST)",
     "block": "Social",
     "start": "2021-07-05T13:15:00Z",
-    "end": "2021-07-05T14:15:00Z",
+    "end": "2021-07-05T13:45:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
@@ -55,14 +77,25 @@
     "title": "Social"
   },
   {
-    "session": "Social (CEST)",
+    "session": "Survival Guide (CEST)",
+    "block": "Social",
+    "start": "2021-07-05T13:45:00Z",
+    "end": "2021-07-05T14:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Survival Guide (CEST)",
+    "title": "Social"
+  },
+  {
+    "session": "My first UseR! (CEST)",
     "block": "Social",
     "start": "2021-07-05T14:15:00Z",
     "end": "2021-07-05T15:15:00Z",
     "url": "#",
     "textColor": "black",
     "color": "#85C0F9",
-    "description": "Social (CEST)",
+    "description": "My first UseR! (CEST)",
     "title": "Social"
   },
   {
@@ -121,17 +154,6 @@
     "title": "Main Conference Program"
   },
   {
-    "session": "RechaRge 1",
-    "block": "Main Conference Program",
-    "start": "2021-07-05T23:30:00Z",
-    "end": "2021-07-06T00:30:00Z",
-    "url": "#",
-    "textColor": "black",
-    "color": "#E0DCD3",
-    "description": "RechaRge 1",
-    "title": "Main Conference Program"
-  },
-  {
     "session": "Elevator Pitches 1",
     "block": "Main Conference Program",
     "start": "2021-07-06T00:45:00Z",
@@ -152,17 +174,6 @@
     "color": "#85C0F9",
     "description": "Social",
     "title": "Social"
-  },
-  {
-    "session": "RechaRge 2",
-    "block": "Main Conference Program",
-    "start": "2021-07-06T06:30:00Z",
-    "end": "2021-07-06T07:30:00Z",
-    "url": "#",
-    "textColor": "black",
-    "color": "#E0DCD3",
-    "description": "RechaRge 2",
-    "title": "Main Conference Program"
   },
   {
     "session": "Keynote 3: KUSHWAHA",
@@ -297,17 +308,6 @@
     "title": "Main Conference Program"
   },
   {
-    "session": "RechaRge 3",
-    "block": "Main Conference Program",
-    "start": "2021-07-08T08:15:00Z",
-    "end": "2021-07-08T09:15:00Z",
-    "url": "#",
-    "textColor": "black",
-    "color": "#E0DCD3",
-    "description": "RechaRge 3",
-    "title": "Main Conference Program"
-  },
-  {
     "session": "Regular Talk 7",
     "block": "Main Conference Program",
     "start": "2021-07-08T09:15:00Z",
@@ -363,17 +363,6 @@
     "title": "Main Conference Program"
   },
   {
-    "session": "RechaRge 4",
-    "block": "Main Conference Program",
-    "start": "2021-07-09T17:45:00Z",
-    "end": "2021-07-09T18:45:00Z",
-    "url": "#",
-    "textColor": "black",
-    "color": "#E0DCD3",
-    "description": "RechaRge 4",
-    "title": "Main Conference Program"
-  },
-  {
     "session": "Panels and Incubators 4",
     "block": "Main Conference Program",
     "start": "2021-07-09T18:45:00Z",
@@ -396,17 +385,6 @@
     "title": "Main Conference Program"
   },
   {
-    "session": "Closing and Awards",
-    "block": "Social",
-    "start": "2021-07-09T21:30:00Z",
-    "end": "2021-07-09T23:30:00Z",
-    "url": "#",
-    "textColor": "black",
-    "color": "#85C0F9",
-    "description": "Closing and Awards",
-    "title": "Social"
-  },
-  {
     "session": "Tutorials",
     "block": "Tutorials",
     "start": "2021-07-07T00:00:00Z",
@@ -416,5 +394,247 @@
     "color": "#ABC3C9",
     "description": "Tutorials",
     "title": "Tutorials"
+  },
+  {
+    "session": "RechaRge 1",
+    "block": "Social",
+    "start": "2021-07-05T23:30:00Z",
+    "end": "2021-07-06T00:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "RechaRge 1",
+    "title": "Social"
+  },
+  {
+    "session": "RechaRge 2",
+    "block": "Social",
+    "start": "2021-07-06T06:30:00Z",
+    "end": "2021-07-06T07:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "RechaRge 2",
+    "title": "Social"
+  },
+  {
+    "session": "RechaRge 3",
+    "block": "Social",
+    "start": "2021-07-08T08:15:00Z",
+    "end": "2021-07-08T09:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "RechaRge 3",
+    "title": "Social"
+  },
+  {
+    "session": "RechaRge 4",
+    "block": "Social",
+    "start": "2021-07-09T17:45:00Z",
+    "end": "2021-07-09T18:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "RechaRge 4",
+    "title": "Social"
+  },
+  {
+    "session": "Lunch",
+    "block": "Social",
+    "start": "2021-07-06T10:15:00Z",
+    "end": "2021-07-06T11:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "aRt Gallery ",
+    "title": "Social"
+  },
+  {
+    "session": "Lunch",
+    "block": "Social",
+    "start": "2021-07-08T04:30:00Z",
+    "end": "2021-07-08T05:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "aRt Gallery ",
+    "title": "Social"
+  },
+  {
+    "session": "Lunch",
+    "block": "Social",
+    "start": "2021-07-09T15:15:00Z",
+    "end": "2021-07-09T16:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": " tRivia",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-05T16:30:00Z",
+    "end": "2021-07-05T16:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-05T18:15:00Z",
+    "end": "2021-07-05T18:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-05T20:00:00Z",
+    "end": "2021-07-05T20:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-05T22:00:00Z",
+    "end": "2021-07-05T22:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-06T00:30:00Z",
+    "end": "2021-07-06T00:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-06T08:30:00Z",
+    "end": "2021-07-06T08:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-06T12:45:00Z",
+    "end": "2021-07-06T13:00:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-06T14:30:00Z",
+    "end": "2021-07-06T14:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-06T15:45:00Z",
+    "end": "2021-07-06T16:00:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-08T01:30:00Z",
+    "end": "2021-07-08T01:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-08T03:15:00Z",
+    "end": "2021-07-08T03:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-08T07:00:00Z",
+    "end": "2021-07-08T07:15:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-09T13:30:00Z",
+    "end": "2021-07-09T13:45:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Break",
+    "block": "Social",
+    "start": "2021-07-09T19:45:00Z",
+    "end": "2021-07-09T20:00:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Break",
+    "title": "Social"
+  },
+  {
+    "session": "Closing and Awards",
+    "block": "Social",
+    "start": "2021-07-09T21:30:00Z",
+    "end": "2021-07-09T22:30:00Z",
+    "url": "#",
+    "textColor": "black",
+    "color": "#85C0F9",
+    "description": "Closing and Awards",
+    "title": "Social"
   }
 ]
